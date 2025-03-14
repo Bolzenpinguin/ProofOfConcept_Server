@@ -1,0 +1,9 @@
+{
+  "name": "server-for-proofofconcept",
+  "version": "0.0.1",
+  "description": "Server for ProofOfConcept",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
