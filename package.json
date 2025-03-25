@@ -1,9 +1,16 @@
 {
   "name": "server-for-proofofconcept",
-  "version": "0.0.1",
-  "description": "Server for ProofOfConcept",
-  "type": "commonjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
-    "express": "^4.21.2"
+    "@socket.io/admin-ui": "^0.5.1",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
