@@ -27,6 +27,11 @@ io.on('connection', (socket) => {
         socket.broadcast.emit("receive-actor-placement", jsondata)
     })
 
+    // Remove Actor
+    socket.on("send-actor-remove", (jsondata) => {
+        //console.log(`json inhalt: ${jsondata}`)
+        socket.broadcast.emit("receive-actor-remove", jsondata)
+    })
 
 
 })
