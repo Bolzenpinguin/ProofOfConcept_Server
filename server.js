@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
 
     // Place Actor
     socket.on("send-actor-placement", (jsondata) => {
-        console.log(`json inhalt: ${jsondata}`)
+        //console.log(`json inhalt: ${jsondata}`)
         socket.broadcast.emit("receive-actor-placement", jsondata)
     })
 
