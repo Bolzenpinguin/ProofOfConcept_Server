@@ -19,7 +19,7 @@ const io = require("socket.io")(3000, {
 
 
 io.on('connection', (socket) => {
-    console.log(socket.id);
+    //console.log(socket.id);
 
     // Place Actor
     socket.on("send-actor-placement", (jsondata) => {
@@ -31,6 +31,11 @@ io.on('connection', (socket) => {
     socket.on("send-actor-remove", (jsondata) => {
         //console.log(`json inhalt: ${jsondata}`)
         socket.broadcast.emit("receive-actor-remove", jsondata)
+    })
+
+    // Change Channel
+    socket.on("channel-change", (jsondata) => {
+        socket.broadcast.emit("channel-change", jsondata)
     })
 
 
