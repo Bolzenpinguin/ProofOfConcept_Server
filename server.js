@@ -38,6 +38,10 @@ io.on('connection', (socket) => {
         socket.broadcast.emit("channel-change", jsondata)
     })
 
+    // Change Color
+    socket.on("color-change", (jsondata) => {
+        socket.broadcast.emit("color-change", jsondata)
+    })
 
 })
 
